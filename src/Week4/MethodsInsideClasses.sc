@@ -7,6 +7,8 @@
 class Sailboat {
   def raise  = "Sails raised"
   def lower = "Sails lowered"
+  val temp = new Flare
+  def signal = temp.light
 }
 
 val sailboat = new Sailboat
@@ -18,6 +20,8 @@ assert(r2 == "Sails lowered", "Expected Sails lowered, Got " + r2)
 class Motorboat {
   def on  = "Motor on"
   def off = "Motor off"
+  val temp = new Flare
+  def signal = temp.light
 }
 
 val motorboat = new Motorboat
@@ -37,3 +41,15 @@ class Flare {
 val flare = new Flare
 val f1 = flare.light
 assert(f1 == "Flare used!", "Expected Flare used!, Got " + f1)
+
+// Q3. In each of the Sailboat and Motorboat classes, add a method signal
+// that creates a Flare object and calls the light method on the Flare.
+// Satisfy the following:
+
+val sailboat2 = new Sailboat
+val signal = sailboat2.signal
+assert(signal == "Flare used!", "Expected Flare used! Got " + signal)
+
+val motorboat2 = new Motorboat
+val flare2 = motorboat2.signal
+assert(flare2 == "Flare used!", "Expected Flare used!, Got " + flare2)
