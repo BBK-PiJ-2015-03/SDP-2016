@@ -41,3 +41,9 @@ println(v7.max)
 println(v8.sum)
 println(v8.min)
 println(v8.max)
+
+// Q5. Create two Vectors of Int named myVector1
+// and myVector2, each initialised to 1, 2, 3, 4, 5, 6.
+// Use AtomicTest to show whether the two are equivalent.
+
+//Could not work with this as I cannot import AtomicTest, not working for me.
