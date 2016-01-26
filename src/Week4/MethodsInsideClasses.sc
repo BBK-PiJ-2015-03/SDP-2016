@@ -28,3 +28,12 @@ assert(s2 == "Motor off", "Expected Motor off, Got " + s2)
 
 // IntelliJ is giving a "Cannot resolve symbol" error on the sailboat methods but
 // on the motorboat methods there are no errors, strange behaviour. Code compiles and works as expected.
+
+// Q2. Create a new class Flare. Define a light method in the Flare class. Satisfy the following:
+class Flare {
+  def light = "Flare used!"
+}
+
+val flare = new Flare
+val f1 = flare.light
+assert(f1 == "Flare used!", "Expected Flare used!, Got " + f1)
