@@ -30,3 +30,12 @@ if((sky.equals("partly cloudy") || sky.equals("sunny")) && (temp > 80 || temp < 
   println("The weather could be better")
   result = false
 }
+
+// Q4. Convert Fahrenheit to Celsius.
+// Hint: first subtract 32, then multiply by 5/9. If you get 0, check to make sure you didnt do integer maths.
+println(s"Temp: ${temp}f = ${(temp-32.0)*(5.0/9.0)}c")
+
+// Q5. Convert Celsius to Fahrenheit.
+// Hint: first multiply by 9/5, then add 32. Use this to check your solution for the previous exercise.
+temp = -10
+println(s"Temp: ${temp}c = ${temp*(9.0/5.0)+32}f")
