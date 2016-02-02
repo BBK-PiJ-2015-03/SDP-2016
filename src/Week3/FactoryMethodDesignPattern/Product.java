@@ -1,4 +1,4 @@
-package Week2.FactoryMethodDesignPattern;
+package Week3.FactoryMethodDesignPattern;
 
 /**
  * Created by J2FX on 19/01/2016.

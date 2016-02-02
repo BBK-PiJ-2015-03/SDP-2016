@@ -1,5 +1,5 @@
 // Given the following code:
-import com.atomicscala.AtomicTest._  //Import is not working... cannot answer the questions.
+import atomicscala.src.com.atomicscala.AtomicTest._  //Import is not working... cannot answer the questions.
 
 class Cup {
   var percentFull = 0

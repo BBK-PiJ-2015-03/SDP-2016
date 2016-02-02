@@ -1,4 +1,4 @@
-package Week2.TheSingletonDesignPattern;
+package Week3.TheSingletonDesignPattern;
 
 /**
  * Long form questions
@@ -7,10 +7,6 @@ package Week2.TheSingletonDesignPattern;
 public class Singleton {
 
     private static Singleton instance = null;
-
-    private Singleton(){
-
-    }
 
     public static Singleton getInstance(){
         if(instance == null){
