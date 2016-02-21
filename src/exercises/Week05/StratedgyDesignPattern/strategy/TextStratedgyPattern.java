@@ -1,7 +1,7 @@
-package exercises.Week05.StratedgyDesignPattern;
+package exercises.Week05.StratedgyDesignPattern.strategy;
 
 /**
- * Created by J2FX on 02/02/2016.
+ * A run-time example of the strategy pattern
  */
 public class TextStratedgyPattern {
     public static void main(String[] args) {

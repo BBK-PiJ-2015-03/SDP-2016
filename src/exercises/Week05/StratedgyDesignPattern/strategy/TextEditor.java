@@ -1,7 +1,7 @@
-package exercises.Week05.StratedgyDesignPattern;
+package exercises.Week05.StratedgyDesignPattern.strategy;
 
 /**
- * Created by J2FX on 02/02/2016.
+ * Text editor factory, assigns format to text.
  */
 public class TextEditor {
     private TextFormatter format;
