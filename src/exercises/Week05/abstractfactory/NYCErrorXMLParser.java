@@ -1,4 +1,4 @@
-package exercises.Week05.StratedgyDesignPattern.abstractfactory;
+package exercises.Week05.abstractfactory;
 
 public class NYCErrorXMLParser implements XMLParser{
 

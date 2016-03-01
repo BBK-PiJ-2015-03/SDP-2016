@@ -1,4 +1,4 @@
-package exercises.Week05.StratedgyDesignPattern.abstractfactory;
+package exercises.Week05.abstractfactory;
 
 public class NYCOrderXMLParser implements XMLParser{
     @Override

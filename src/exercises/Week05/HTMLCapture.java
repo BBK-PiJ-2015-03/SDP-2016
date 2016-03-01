@@ -1,4 +1,4 @@
-package exercises.Week05.StratedgyDesignPattern;
+package exercises.Week05;
 
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.*;

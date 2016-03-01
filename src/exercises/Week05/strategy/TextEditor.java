@@ -1,4 +1,4 @@
-package exercises.Week05.StratedgyDesignPattern.strategy;
+package exercises.Week05.strategy;
 
 /**
  * Text editor factory, assigns format to text.

@@ -1,4 +1,4 @@
-package exercises.Week05.StratedgyDesignPattern.builder;
+package exercises.Week05.builder;
 
 public class Car {
     private String bodyStyle;

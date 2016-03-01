@@ -1,4 +1,4 @@
-package exercises.Week05.StratedgyDesignPattern.strategy;
+package exercises.Week05.strategy;
 
 /**
  * A run-time example of the strategy pattern
