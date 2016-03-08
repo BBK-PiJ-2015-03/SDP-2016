@@ -34,7 +34,7 @@ object Draw{
       println("A square of width and height " + (shape.perimeter()/4).toInt + "cm")
     }
     else if(shape.getClass.getSimpleName == "Rectangle"){
-      println("A rectangle of width " + Rectangle.getWidth() )// Unsure how to get width/length here
+      println("A rectangle of width ")// Unsure how to get width/length here
     }
   }
 }
@@ -42,3 +42,5 @@ object Draw{
 println(Draw(Circle(10)))
 println(Draw(Square(4)))
 println(Draw(Rectangle(8, 15))) // Would not compile when I removed case for Rectangle class
+
+sealed trait Colour
