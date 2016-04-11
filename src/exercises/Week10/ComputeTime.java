@@ -1,5 +1,4 @@
 package exercises.Week10;
-import org.reflections.scanners.SubTypesScanner;
 
 
 /**
@@ -7,7 +6,6 @@ import org.reflections.scanners.SubTypesScanner;
  */
 public class ComputeTime {
     public static void main(String[] args) {
-        Reflections reflections = new ;
 
     }
 }

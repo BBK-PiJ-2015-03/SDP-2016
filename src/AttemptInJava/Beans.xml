@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+    <!--<bean id="cw_two.Game_Easy" class="cw_two.HardGameImpl">-->
+        <!--<constructor-arg value="true"/>-->
+    <!--</bean>-->
+    <!--<bean id="cw_two.Game_Hard" class="cw_two.HardGameImpl">-->
+        <!--<constructor-arg value="false"/>-->
+    <!--</bean>-->
+
+    <bean id="cw_two.SecretCode" class="AttemptInJava.SecretCode">
+        <constructor-arg value="R,B,Y,G,P,O"/>
+        <constructor-arg value='4'/>
+    </bean>
+
+    <bean id="RPeg" class="AttemptInJava.Peg">
+        <constructor-arg value="Red"/>
+    </bean>
+
+    <bean id="BPeg" class="AttemptInJava.Peg">
+        <constructor-arg value="Blue"/>
+    </bean>
+
+    <bean id="YPeg" class="AttemptInJava.Peg">
+        <constructor-arg value="Yellow"/>
+    </bean>
+
+    <bean id="GPeg" class="AttemptInJava.Peg">
+        <constructor-arg value="Green"/>
+    </bean>
+
+    <bean id="PPeg" class="AttemptInJava.Peg">
+        <constructor-arg value="Purple"/>
+    </bean>
+
+    <bean id="OPeg" class="AttemptInJava.Peg">
+        <constructor-arg value="Orange"/>
+    </bean>
+
+</beans>

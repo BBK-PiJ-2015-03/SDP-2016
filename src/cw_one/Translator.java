@@ -116,7 +116,7 @@ public class Translator {
                 r = scanInt();
                 s1 = scanInt();
                 nextLabel = scan();
-                return new BnzInstruction(label, r, s1, nextLabel);
+               // return new BnzInstruction(label, r, s1, nextLabel);
         }
 
         // You will have to write code here for the other instructions.
