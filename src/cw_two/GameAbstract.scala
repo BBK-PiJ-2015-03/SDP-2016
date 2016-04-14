@@ -2,6 +2,7 @@ package cw_two
 
 abstract class GameAbstract extends Game {
   private var showCode: Boolean = false
+  private var noOfGuesses = GameConstants.noOfGuesses
 
   /**
     * Create a Game object.
@@ -21,14 +22,33 @@ abstract class GameAbstract extends Game {
     * quits.
     */
   override def runGames: Unit = {
+
     println(GameConstants.openingMessage)
-    println("Generating Secret Code...")
-    val code = SecretCode.generate
-
-    if(this.showCode){
-
-      print("The secret code is ")
-      code.foreach(c => print(c.name))
+    var continue = true;
+    while (continue) {
+      println("Generating Secret Code...")
+      val code = SecretCode.generate
+      var codeString = ""
+      code.foreach(c => codeString += c.name)
+      if (this.showCode) {
+        println("The secret code is " + codeString)
+      }
+      do {
+        println("You have " + noOfGuesses + " guesses left.")
+        val guess = readLine()
+        println(guess + " Result: " + CodeComparator(guess, codeString))
+        noOfGuesses = noOfGuesses - 1
+        if (CodeComparator.solved) {
+          println("You solved the puzzle! Good Job")
+        }
+      } while (noOfGuesses != 0 && !CodeComparator.solved)
+      if (!CodeComparator.solved) {
+        println("You lose! Bad Job")
+      }
+      print("Enter Y for another game or anything else to quit: ")
+      val choice = readLine()
+      continue = choice.equalsIgnoreCase("Y")
+      noOfGuesses = GameConstants.noOfGuesses
     }
   }
 }
